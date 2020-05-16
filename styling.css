@@ -1,0 +1,213 @@
+div {
+    height: 99.9%;
+    width: 100%;
+
+    background-color: lightblue;
+
+
+    
+    border-radius: 5px;
+    margin: 0;
+    padding: 10x;
+}
+
+
+h2 {
+    padding-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    font-family: "Chewy";
+    font-size: 65px;
+}
+
+
+h4 {
+    margin-bottom: 30px;
+    text-align: center;
+
+    font-family: "Chewy";
+    font-size: 30px;
+
+    vertical-align: middle;
+}
+
+h3 {
+    text-align: center;
+
+    font-family: "Chewy";
+    font-size: 45px;
+
+    vertical-align: middle;
+}
+
+img {
+    height: 75%;
+    width: 75%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    align-self: center;
+}
+
+
+#gameArea {
+    height: 640px;
+    width: 598px;
+    padding: 0;
+
+    background-color: #add8e6;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;
+}
+
+#howToPlayDiv {
+    height: 500px;
+    width: 500px;
+    background-color: lightgray;
+
+    padding: 20px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;
+
+    z-index: 1000;
+}
+
+#howToPlay {
+    height: 35px;
+    width: 30px;
+
+    font-size: 40px;
+
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    background-color: transparent;
+    border-color: transparent;
+
+}
+
+#howToPlayHeader {
+    margin: 0;
+    padding: 0;
+
+    padding-bottom: 20px;
+}
+
+#onePlayer{
+    height: 20%;
+    width: 30%; 
+
+    margin-left: 15%;
+    margin-right: 3%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+
+    border-radius: 20px;
+    border-color: darkgray;
+    background-color: white;
+    border-width: 1;
+    border-style: solid;
+}
+
+#twoPlayers {
+    height: 20%;
+    width: 30%; 
+
+    margin-left: 3%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+
+    border-radius: 20px;
+    border-color: darkgray;
+    background-color: white;
+    border-width: 1;
+    border-style: solid;
+}
+
+#titleImage{
+    height: fit-content;
+}
+
+#choiceSelection {
+    padding: 5%;
+}
+
+#playAgain {
+    height: 100px;
+    width: 100px;
+
+    position: relative;
+    top: 50%;
+    left: 42.5%;
+
+    background-color: yellow;
+    border-radius: 90px;
+    border-style: solid;
+    border-color:orange;
+    box-shadow:  0px 5px 20px yellow;
+
+    font-family: "Chewy";
+    font-size: 25px;
+    text-decoration-color: black;
+}
+
+
+.RockPaperScissors-image {
+    background-image: url("assets/Rock, Paper, Scissors!.png");
+    background-color: lightblue;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-img {
+    background-image: url("assets/Background.png");
+    background-color: lightblue;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-group {
+    height: 25%;
+    width: 25%;
+    border-radius: 25px;
+    
+    background-color: transparent;
+    border-color: transparent;
+    margin: 3%;
+}
+
+
+.continue-btn {
+    height: 80px;
+    width: 80px;
+
+    position: relative;
+    top: 85%;
+    left: 5%;
+
+    background-color: #6cae8b;
+    border-radius: 90px;
+    border-style: solid;
+    border-color: #4f9273;
+    box-shadow:  -5px 5px 5px #37735b;
+
+    font-family: "Chewy";
+    font-size: 30px;
+    text-decoration-color: black;
+}
+
+
+
+/* Create a hover option for each choice(Shadow)*/

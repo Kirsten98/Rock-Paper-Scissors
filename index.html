@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  <!--CSS framework directed at responsive, mobile-first front-end web development. -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script> <!--- Makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
+    <script type="text/javascript" src="RockPaperScissors.js"></script>
+    <link rel="stylesheet" type="text/css" href="styling.css" media="screen"/>
+
+
+    <head>
+        <title>Rock Paper Scissors</title>
+    </head>
+
+    <body>
+        <div id=gameArea class="container">
+            <button id=howToPlay style="position: fixed;">
+                <script>
+                $("#howToPlay").click(() => {
+                    $("#howToPlayDiv").show();
+                })
+                </script>
+                <img src="assets/Information.png" style="height: 80%; width: 40%;">
+            
+            </button>
+
+            <div id="howToPlayDiv" style="display: none; position: absolute;">
+                <button id=close>x<script> $("#close").click(() => {
+                    $("#howToPlayDiv").hide();
+                })</script></button>
+
+                <p>
+                   <h2 id="howToPlayHeader">
+                       How to Play
+                   </h2>
+                   <h4>
+                       Each player will either select Rock, Paper, or Scissors. <br> <br>
+                       
+                       Rock beats Scissors <br>
+                       Scissors beats Paper <br>
+                       Paper beats Rock <br>
+                   </h4>
+                   
+               </p>
+           </div>
+   
+           <div id=titleScreen class="RockPaperScissors-image">
+                <button id = playGame class="continue-btn" ><img src="assets/Play Filled In.png"></button> <br> 
+           </div>
+
+           <div id=howManyPlayers class="background-img" style="display: none;">
+                <h2 id=howManyPlayersText>How many players?</h2>
+                <button id=onePlayer onclick="setNumberOfPlayers(1)"><img src="assets/One Player.png"></button>
+                <button id=twoPlayers onclick="setNumberOfPlayers(2)"><img src="assets/Two Players.png"></button>
+           </div>
+
+
+           <div id="startGame" class="background-img" style="display: none;">
+               <div id=choiceSelection class="background-img">
+                    <h2 id = playerOne>Player one:</h2>
+                    <h2 id = playerTwo style="display: none;">Player Two:</h2>
+                    <button id="rock" class="btn-group" onclick="rockChoice()" ><img src="assets/Rock.png"></img></button>
+                    <button id="paper" class="btn-group" onclick="paperChoice()"><img src="assets/Paper.png"></img></button>
+                    <button id="scissors" class="btn-group" onclick="scissorChoice()"><img src="assets/Scissors.png"></img></button>
+                    <br>
+                    <br>
+                    <h4>Your choice is: </h4><h4 id=choice></h4>
+                    <br>
+                    <button id=submitChoice class="continue-btn" onclick="submitChoice()" disabled style="display: none;">Next</button>
+               </div>
+
+           <div id=results class="background-img" style="display: none;">
+                <h2>And the winner is 🥁</h2>
+                <h3 id=winner></h3>
+
+                <button id=playAgain onclick="playAgain()">Play again?</button>
+            </div>
+
+           </div>
+
+        </div>
+        
+    </body>
+
+    <script>
+
+        $(() => {
+            $("#playGame").click(() => {
+                $("#titleScreen").hide();
+                $("#howManyPlayers").show();
+            })
+        })
+
+    </script>
+</html>
