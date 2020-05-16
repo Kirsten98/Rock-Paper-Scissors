@@ -1,5 +1,13 @@
 # Rock-Paper-Scissors
-JavaScript Project for a simple game of Rock Paper Scissors
+JavaScript Project for a simple game of Rock, Paper, Scissors!
+
+## This project was to familiarize with the following:
+  * Node.Js
+  * Express
+  * JavaScript
+  * HTML
+  * CSS
+  * Socket.IO (Included for future API enhancements)
 
 
 # Installing and running the project
