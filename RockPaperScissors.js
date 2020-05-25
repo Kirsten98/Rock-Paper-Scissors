@@ -68,6 +68,7 @@ function submitChoice() {
     } else {
         playerTwoChoice = assignChoiceObjectFromString($("#choice").text());
         $("#choiceSelection").hide();
+        $("#choice").text("");
         results(playerOneChoice, playerTwoChoice);
         $("#results").show();
     }
